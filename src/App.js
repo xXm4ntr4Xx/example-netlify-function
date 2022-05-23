@@ -1,13 +1,14 @@
 import './App.css';
-import {useState,useEffect} from 'react'
+import {useEffect} from 'react'
+// import {useState} from 'react'
 
 function App() {
-  const [myName,setMyName] = useState([])
+  // const [myName,setMyName] = useState([])
 const fetchData = async() =>{
   const response = await fetch('https://example0011.netlify.app/.netlify/functions/hello');
   const data = await response.json()
   console.log(data)
-  setMyName(data.payload)
+  // setMyName(data.payload)
 }
 useEffect(()=>{
 fetchData();
