@@ -4,8 +4,8 @@ import {useEffect} from 'react'
 function App() {
 const fetchData = async() =>{
   const response = await fetch('https://heroic-madeleine-7b4202.netlify.app/.netlify/functions/data');
-  const data = await response.json();
-  console.log(data)
+  
+  console.log(response)
 }
 useEffect(()=>{
 fetchData();
