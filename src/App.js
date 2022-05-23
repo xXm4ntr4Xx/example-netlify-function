@@ -7,7 +7,7 @@ function App() {
 const fetchData = async() =>{
   const response = await fetch('https://example0011.netlify.app/.netlify/functions/hello');
   const data = await response.json()
-  console.log(data)
+  console.log(data.payload)
   // setMyName(data.payload)
 }
 useEffect(()=>{
