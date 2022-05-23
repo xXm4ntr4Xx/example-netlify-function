@@ -3,7 +3,7 @@ import {useEffect} from 'react'
 
 function App() {
 const fetchData = async() =>{
-  const response = await fetch('https://dapper-chimera-3d1b89.netlify.app/.netlify/functions/data');
+  const response = await fetch('https://heroic-madeleine-7b4202.netlify.app/.netlify/functions/data');
   const data = await response.json();
   console.log(data)
 }
